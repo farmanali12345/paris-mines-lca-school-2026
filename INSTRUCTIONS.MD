@@ -180,7 +180,99 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 The venv requirements include the optional Day 4 `trails` package and the visualization packages installed from GitHub.
 If this GitHub install is blocked by your institution, send the error log before the course.
 
-## 4) Install the Activity Browser
+## 4) Optional: save your environment recipe
+
+Use this if you want to save a reproducible recipe for your current environment.
+This is an environment recipe, not a `conda-build` package recipe.
+Run these commands from the repository root.
+If you are still in `envs/`, run `cd ..` first.
+
+### Conda environment YAML
+
+Activate the environment first:
+
+```bash
+conda activate lca-course
+```
+
+For a portable recipe with only the packages you explicitly installed:
+
+macOS or Linux:
+
+```bash
+conda env export --from-history | grep -v "^prefix:" > envs/lca_course_from_history.yaml
+```
+
+Windows PowerShell:
+
+```powershell
+conda env export --from-history | Where-Object { $_ -notmatch "^prefix:" } | Set-Content -Encoding utf8 envs\lca_course_from_history.yaml
+```
+
+For a more complete snapshot of the solved environment:
+
+macOS or Linux:
+
+```bash
+conda env export --no-builds | grep -v "^prefix:" > envs/lca_course_full_export.yaml
+```
+
+Windows PowerShell:
+
+```powershell
+conda env export --no-builds | Where-Object { $_ -notmatch "^prefix:" } | Set-Content -Encoding utf8 envs\lca_course_full_export.yaml
+```
+
+Use `lca_course_from_history.yaml` when sharing a clean recipe with another student.
+Use `lca_course_full_export.yaml` when you need to reproduce the exact package versions from your own machine.
+
+To recreate the environment later:
+
+```bash
+conda env create -f envs/lca_course_from_history.yaml
+```
+
+### venv / pip requirements file
+
+Activate the venv first.
+
+macOS or Linux:
+
+```bash
+source .venv-lca-course/bin/activate
+python -m pip freeze > envs/requirements_lca_course_local.txt
+```
+
+Windows PowerShell:
+
+```powershell
+.\.venv-lca-course\Scripts\Activate.ps1
+python -m pip freeze > envs\requirements_lca_course_local.txt
+```
+
+To recreate the venv later:
+
+macOS or Linux:
+
+```bash
+python3.11 -m venv .venv-lca-course-recreated
+source .venv-lca-course-recreated/bin/activate
+python -m pip install --upgrade "pip<26" "setuptools<81" wheel
+python -m pip install -r envs/requirements_lca_course_local.txt
+```
+
+Windows PowerShell:
+
+```powershell
+py -3.11 -m venv .venv-lca-course-recreated
+.\.venv-lca-course-recreated\Scripts\Activate.ps1
+python -m pip install --upgrade "pip<26" "setuptools<81" wheel
+python -m pip install -r envs\requirements_lca_course_local.txt
+```
+
+For course maintenance, update the official files in `envs/` deliberately rather than overwriting them with a personal export.
+
+## 5) Install the Activity Browser
 
 Please install the beta version of the AB, following the official installation guide here:
 https://lca-activitybrowser.github.io/activity-browser/getting-started/installation.html
@@ -236,7 +328,7 @@ activity-browser
 deactivate
 ```
     
-## 5) Activate `lca-course`
+## 6) Activate `lca-course`
 
 Activate in the same shell.
 
@@ -258,7 +350,7 @@ venv / pip on Windows PowerShell:
 .\.venv-lca-course\Scripts\Activate.ps1
 ```
 
-## 6) Create a repo-root `.env` file
+## 7) Create a repo-root `.env` file
 
 If you are still in `envs/`, go back to the repository root first.
 
@@ -275,7 +367,7 @@ You can also start from `.env.example`.
 The Day 2, Day 3, and optional Day 4 notebooks load this file automatically with `python-dotenv`.
 The `.env` file is ignored by Git and should stay local.
 
-## 7) Run quick import checks
+## 8) Run quick import checks
 
 Still in the activated `lca-course` environment:
 
@@ -306,7 +398,7 @@ python -c "import scikits.umfpack; print('UMFPACK import: OK')"
 If the environment is still inconsistent, recreate it from the YAML file.
 For venv/pip users, do not spend time manually compiling `scikit-umfpack` before the course unless your institution already provides the needed system libraries.
 
-## 8) Confirm the bundled BAFU workbook is present
+## 9) Confirm the bundled BAFU workbook is present
 
 From the repository root:
 
@@ -316,7 +408,7 @@ ls data/lci-bafu.xlsx
 
 If the file exists, you do not need any separate BAFU download before the course.
 
-## 9) Start Jupyter Lab and run the setup notebook
+## 10) Start Jupyter Lab and run the setup notebook
 
 From the repository root:
 
@@ -328,7 +420,7 @@ jupyter lab
 Then open:
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
 
-## 10) Before the course starts
+## 11) Before the course starts
 
 Please complete:
 - [READING_MATERIAL.md](READING_MATERIAL.md)
