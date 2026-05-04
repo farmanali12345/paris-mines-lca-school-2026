@@ -92,14 +92,14 @@ Inspect imported activities, then compare foreground-only, foreground-plus-backg
 Lunch break
 
 ### 13:00 - 14:30
-Activity Browser Part I: parameterisation, Monte Carlo, and GSA
+Activity Browser Part I: core skills (projects, databases, inventory modeling, LCA calculation, LCA Results, etc.)
 - [AB-01 Activity Browser Part I handout](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/AB-01%20Activity%20Browser%20Part%20I%20handout.md)
 
 ### 14:30 - 15:00
 Coffee break
 
 ### 15:00 - 17:00
-Activity Browser Part I continued
+Activity Browser Part I: advanced skills (multifunctionality, parameters, uncertainties, global sensitivity analysis, etc.)
 - [AB-01 Activity Browser Part I handout](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/AB-01%20Activity%20Browser%20Part%20I%20handout.md)
 
 ## DAY 3 (Wednesday, May 6, 2026) - Premise and Activity Browser Part II
@@ -130,7 +130,7 @@ Inspect and compare generated outputs in Brightway
 Coffee break
 
 ### 15:00 - 17:00
-Activity Browser Part II: compare prospective scenarios
+Activity Browser Part II: model and compare prospective scenarios
 - [AB-02 Activity Browser Part II handout](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/AB-02%20Activity%20Browser%20Part%20II%20handout.md)
 
 ## DAY 4 (Thursday, May 7, 2026) - Edges and Trails

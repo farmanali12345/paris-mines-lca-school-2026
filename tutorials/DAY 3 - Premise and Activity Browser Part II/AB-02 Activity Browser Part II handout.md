@@ -15,27 +15,21 @@ The focus is on comparing scenarios, years, and technologies in the GUI.
 
 ## Module goals
 
-- inspect the generated `premise` scenario databases
-- compare scenarios and years for a selected technology
-- inspect how one activity changes across databases
-- export plots or result tables for discussion
+- inspect the generated `premise` scenario databases and compare how one activity changes across databases 
+- learn how to model with scenarios in the AB
 
-## Suggested sequence
 
-1. Open the generated scenario databases and confirm the naming scheme.
-2. Compare `SSP2-NPi` and `SSP2-PkBudg1000` for the same year.
-3. Compare `2025`, `2035`, and `2050` within one pathway.
-4. Focus on an electricity activity and inspect how suppliers or impacts change.
-5. Export one figure or table for discussion with the group.
+## Detailed schedule
 
-## Optional instructor visuals
+- **Comparison of premise databases** (30 min, 15-15.30)
+  - Live demo: comparison of electricity in France across premise databases (inventory and LCA Results level)
+  - Exercise: explore further differences across premise databases on your own (and maybe report back to the group)
 
-- database comparison view
-- year comparison view
-- technology comparison view
-- figure or table export view
+ 
+- **Scenario Modeling** (90 min, 15.30-17)
+  - Live demo: parameter and flow scenarios
+  - Exercise: Parameter Scenarios
+  - Exercise: Flow Scenarios
 
-## Notes
-
-- This handout is usable without screenshots; add visuals only if they improve the live walkthrough.
-- Keep the comparison examples aligned with the Day 3 notebook naming convention so that participants can move easily between the notebook and GUI views.
+## Resources
+Additional reading material and exercises will be provided during the course. 

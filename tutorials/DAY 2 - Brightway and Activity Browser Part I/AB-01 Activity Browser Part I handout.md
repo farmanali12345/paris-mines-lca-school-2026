@@ -10,33 +10,64 @@ The focus is on advanced analysis features rather than on notebook work.
 ## Before you start
 
 - Activate the `lca-course` environment.
+```bash
+conda activate lca-course
+```
 - Open Activity Browser from the same environment.
+```bash
+activity-browser
+```
 - Select the Brightway project `paris-lca-course-2026`.
 - Confirm that both the Day 1 BAFU database and `ecoinvent-3.12-cutoff` are visible.
+![img.png](assets/images/img.png)
 
 ## Module goals
+- Learn:
+  - **core AB skills**: manage projects and databases, inventory modeling, LCA calculations 
+  - **advanced AB skills**: modeling with multifunctional processes, parameters, uncertainties, and GSA
 
-- inspect activities and exchanges in the shared project
-- review parameter sets and editable fields
-- run Monte Carlo simulations
-- introduce GSA in the GUI
 
-## Suggested sequence
+## Detailed schedule
 
-1. Open the shared project and browse the imported databases.
-2. Inspect one `ecoinvent` electricity activity and one BAFU activity.
-3. Review parameter fields and explain where parameterisation matters.
-4. Launch a Monte Carlo run on a simple product system.
-5. Introduce GSA and discuss when it is worth using.
+### Core AB skills
 
-## Optional instructor visuals
+- **Basic inventory modeling** (30 min, 13-13.30)
+    - Chapters: Projects, Databases, Inventory Modeling
+    - Live demo: projects, databases, inventory modeling
+    - Exercise: "Fuel electricity" (stop before creating the LCA Setup). 
 
-- project selection and database list
-- parameter editing view
-- Monte Carlo setup dialog
-- GSA view or export screen
 
-## Notes
+- **LCA setups and LCA results** (30 min, 13.30-14)
+    - Live demo: walk through the LCA results tabs (electricity DE/FR)
+    - Exercise: Finish "Fuel electricity". Go through all LCA Results tabs. 
+    - Exercise: Analyze LCA Results for a couple of products of your choice. Use contribution analysis and the Sankey tab. Also inspect the lifecycle inventory.
 
-- This handout is usable without screenshots; add visuals only if they improve the live walkthrough.
-- Keep a short list of activities or product systems worth revisiting on Day 3 after the `premise` databases are generated.
+### Advanced AB skills
+
+- **Multifunctional processes** (30 min, 14-14.30)
+  - Chapters: Multifunctional processes
+  - Live demo: creating co-production/recycling/co-treatment processes; allocation & substitution
+  - Exercise: Create a co-production, recycling, and co-treatment process. Add "carbon dioxide, fossil" as environmental flow. Play with allocation and calculate LCA results.
+
+
+- _Coffee break_ (14.30-15)
+
+
+- **Parameters** (30 min, 15-15.30)
+  - Chapters: Parameters
+  - Live demo: Heat pump parameterization
+  - Exercise: "Heat pump, parameterized". Play with the model; how do COP (efficiency), lifetime, and electricity source influence LCA results?
+
+
+- **Uncertainties** (30 min, 15.30-16)
+  - Chapters: Uncertainties and Monte Carlo
+  - Live demo: viewing & adding uncertainty data; conducting Monte Carlo Analysis
+  - Exercise: add uncertainties to your model; conduct Monte Carlo
+
+
+- **Global Sensitivity Analysis** (30 min, 16-16.30)
+  - Live demo: Performing GSA
+  - Exercise: find the most important uncertainties in your system or a Bafu / ecoinvent process of your choice
+
+## Resources
+Additional reading material and exercises will be provided during the course. 
