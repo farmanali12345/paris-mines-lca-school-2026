@@ -10,7 +10,9 @@ Before starting Day 2, make sure that:
 Core material:
 
 1. `D2-01 ecoinvent import and Brightway recap.ipynb`
-2. `AB-01 Activity Browser Part I handout.md`
+2. `D2-02 Foreground and background uncertainty split.ipynb`
+3. `AB-01 Activity Browser Part I handout.md`
 
 The notebook imports `ecoinvent 3.12 cutoff` into the same project, loading credentials from the repo-root `.env` file when available.
-The handout then uses that shared project state in Activity Browser for parameterisation, Monte Carlo, and GSA.
+The second notebook compares carbon-fiber Monte Carlo results with foreground-plus-background uncertainty and foreground-only uncertainty.
+The handout then uses the shared project state in Activity Browser for parameterisation, Monte Carlo, and GSA.

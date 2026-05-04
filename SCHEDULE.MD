@@ -83,8 +83,9 @@ Return to the shared project, import `ecoinvent 3.12 cutoff`, and check the data
 Coffee break
 
 ### 11:00 - 12:00
-Inspect imported activities, rerun one compact LCA, and prepare the project for the GUI module
+Inspect imported activities, then compare foreground-only and foreground-plus-background Monte Carlo uncertainty
 - [D2-01 ecoinvent import and Brightway recap](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-01%20ecoinvent%20import%20and%20Brightway%20recap.ipynb)
+- [D2-02 Foreground and background uncertainty split](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-02%20Foreground%20and%20background%20uncertainty%20split.ipynb)
 
 ### 12:00 - 13:00
 Lunch break
