@@ -83,9 +83,10 @@ Return to the shared project, import `ecoinvent 3.12 cutoff`, and check the data
 Coffee break
 
 ### 11:00 - 12:00
-Inspect imported activities, then compare foreground-only and foreground-plus-background Monte Carlo uncertainty
+Inspect imported activities, then compare foreground-only, foreground-plus-background, and database-parameter Monte Carlo uncertainty
 - [D2-01 ecoinvent import and Brightway recap](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-01%20ecoinvent%20import%20and%20Brightway%20recap.ipynb)
 - [D2-02 Foreground and background uncertainty split](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-02%20Foreground%20and%20background%20uncertainty%20split.ipynb)
+- [D2-03 Database-level parameters and Monte Carlo](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-03%20Database-level%20parameters%20and%20Monte%20Carlo.ipynb)
 
 ### 12:00 - 13:00
 Lunch break

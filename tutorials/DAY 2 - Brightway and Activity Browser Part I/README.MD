@@ -11,8 +11,10 @@ Core material:
 
 1. `D2-01 ecoinvent import and Brightway recap.ipynb`
 2. `D2-02 Foreground and background uncertainty split.ipynb`
-3. `AB-01 Activity Browser Part I handout.md`
+3. `D2-03 Database-level parameters and Monte Carlo.ipynb`
+4. `AB-01 Activity Browser Part I handout.md`
 
-The notebook imports `ecoinvent 3.12 cutoff` into the same project, loading credentials from the repo-root `.env` file when available.
+The first notebook imports `ecoinvent 3.12 cutoff` into the same project, loading credentials from the repo-root `.env` file when available.
 The second notebook compares carbon-fiber Monte Carlo results with foreground-plus-background uncertainty and foreground-only uncertainty.
+The third notebook moves the carbon-fiber parameter example from activity-level parameters to database-level parameters and injects sampled parameter uncertainty into Monte Carlo.
 The handout then uses the shared project state in Activity Browser for parameterisation, Monte Carlo, and GSA.
