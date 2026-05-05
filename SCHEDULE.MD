@@ -108,7 +108,7 @@ Morning instructor: Romain Sacchi
 Afternoon instructor: Bernhard Steubing
 
 ### 09:00 - 10:00
-Start generating prospective databases with `premise`
+Create the Day 3 `premise` project with `ecoinvent 3.12 cutoff`, then start generating prospective databases
 - [D3-01 Generating prospective databases with premise](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Generating%20prospective%20databases%20with%20premise.ipynb)
 
 ### 10:00 - 11:00
@@ -132,6 +132,9 @@ Coffee break
 ### 15:00 - 17:00
 Activity Browser Part II: model and compare prospective scenarios
 - [AB-02 Activity Browser Part II handout](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/AB-02%20Activity%20Browser%20Part%20II%20handout.md)
+
+Optional at home, or if time allows:
+- [D3-04 Optional custom scenarios with premise - RTE FE2050](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-04%20Optional%20custom%20scenarios%20with%20premise%20-%20RTE%20FE2050.ipynb)
 
 ## DAY 4 (Thursday, May 7, 2026) - Edges and Trails
 
