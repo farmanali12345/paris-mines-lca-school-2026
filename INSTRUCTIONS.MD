@@ -428,3 +428,72 @@ Please complete:
 
 Keep the same `lca-course` environment for the full course.
 Keep the same Brightway project name used in the notebooks: `paris-lca-course-2026`.
+
+## 12) Updating the repository during the course
+
+The instructors may add or update files during the course.
+When this happens, you may be asked to run:
+
+```bash
+git pull
+```
+
+This usually works if you have not modified the same files.
+If you have worked in a notebook that was also updated by the instructors, Git may refuse to pull or may report a conflict.
+This is normal: Git is protecting your local work.
+
+Before pulling, check whether you have local changes:
+
+```bash
+git status --short
+```
+
+If the command prints nothing, your repository is clean and you can run:
+
+```bash
+git pull
+```
+
+If it lists modified notebooks or other files, preserve your work first.
+The safest course workflow is:
+
+1. Save and close the notebook in Jupyter.
+2. Copy your edited notebook outside this repository, for example to a folder named `paris-lca-course-my-work`.
+3. Let Git restore the original course notebook.
+4. Pull the instructor updates.
+5. Open both the updated course notebook and your saved copy if you need to transfer answers or notes.
+
+Example, replacing the path with the notebook shown by `git status`:
+
+```bash
+mkdir -p ../paris-lca-course-my-work
+cp "tutorials/DAY 2 - Brightway and Activity Browser Part I/D2-01 ecoinvent import and Brightway recap.ipynb" ../paris-lca-course-my-work/
+git restore "tutorials/DAY 2 - Brightway and Activity Browser Part I/D2-01 ecoinvent import and Brightway recap.ipynb"
+git pull
+```
+
+On Windows, if `cp` is not available in your terminal, use File Explorer to copy the notebook outside the repository before running `git restore`.
+Repeat the `cp` and `git restore` commands for each modified course notebook that blocks the pull.
+Only use `git restore` after you have made a backup copy.
+
+If you prefer to keep all local changes inside Git, you can also use a stash:
+
+```bash
+git stash push -m "my course work before update"
+git pull
+git stash pop
+```
+
+This preserves your changes, but `git stash pop` can still create notebook conflicts if the same notebook changed both locally and upstream.
+If that happens, ask an instructor before trying to edit the notebook file manually.
+Notebook files are JSON files, and manual conflict resolution is easy to get wrong.
+
+If you are already in the middle of a failed pull, stop and ask for help.
+In many cases the instructor can help you return to the pre-pull state with one of:
+
+```bash
+git merge --abort
+git rebase --abort
+```
+
+Do not run `git reset --hard` or discard changes in GitHub Desktop unless you are certain your notebook work has been backed up elsewhere.
