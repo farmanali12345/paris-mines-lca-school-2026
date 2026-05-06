@@ -93,7 +93,7 @@ Before the course:
 During the course:
 
 4. Work through Day 1, Day 2, Day 3, then Day 4 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
-5. Keep using the same `lca-course` environment and the same Brightway project, `paris-lca-course-2026`.
+5. Keep using the same `lca-course` environment. Day 1 and Day 2 use `paris-lca-course-2026`; Day 3 `premise` work uses a separate project, `paris-lca-course-2026-premise`, containing `ecoinvent-3.12-cutoff`.
 
 ## Software
 

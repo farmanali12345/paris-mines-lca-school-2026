@@ -427,7 +427,8 @@ Please complete:
 - [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb)
 
 Keep the same `lca-course` environment for the full course.
-Keep the same Brightway project name used in the notebooks: `paris-lca-course-2026`.
+Use `paris-lca-course-2026` for the Day 1 and Day 2 Brightway notebooks.
+The Day 3 `premise` notebooks create or select a separate project, `paris-lca-course-2026-premise`, with `ecoinvent-3.12-cutoff`.
 
 ## 12) Updating the repository during the course
 

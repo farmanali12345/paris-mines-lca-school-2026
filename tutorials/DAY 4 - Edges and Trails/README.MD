@@ -20,4 +20,4 @@ Optional reserve material, if group progress allows:
 8. `D4-08 Optional Trails - premise and imported LCI example.ipynb`
 
 The core `edges` work still uses the BAFU-based course project.
-The optional `trails` notebooks assume that the Day 3 `premise` datapackage export is available.
+The optional `trails` notebooks assume that the Day 3 `premise` datapackage export from `paris-lca-course-2026-premise` is available.
